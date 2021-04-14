@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pascal Jufer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <style>
+    body {
+      font-family: Playfair Display, serif;
+    }
+    h1 {
+      font-size: 62px;
+    }
+    h1,
+    h2 {
+      margin: 0;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 400;
+      font-style: italic;
+      color: #585858;
+    }
+    h3 {
+      font-family: Open Sans, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #22272e;
+      }
+      body,
+      h2 {
+        color: #adbac7;
+      }
+      a {
+        color: #71bfe3;
+      }
+      a:visited {
+        color: #b8678b;
+      }
+    }
+  </style>
+  <body>
+    <div style="width: 70%; margin: auto">
+      <main
+        style="
+          display: grid;
+          grid-template-columns: 65% 35%;
+          column-gap: 2em;
+          margin-top: 180px;
+          margin-bottom: 40px;
+        "
+      >
+        <div>
+          <h1>Pascal Jufer</h1>
+          <h2>System Engineer & Student</h2>
+          <h3>
+            I'm a 27-year-old qualified system engineer and computer science
+            student, living in Bern.<br />
+          </h3>
+          <h3>
+            Particularly interested in the world of DevOps, I love building
+            complex software stacks as well as improving and automating
+            processes.
+          </h3>
+          <h3>
+            I like to understand what's going on under the hood; one of many
+            reason why I'm a big fan of Linux along with free and open source
+            software in general.
+          </h3>
+          <h3>
+            Also, I'm a self-taught web developer with a focus on modern and
+            secure solutions together with great designs.
+          </h3>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="pascal.webp" />
+          <source type="image/jpeg" srcset="pascal.jpg" />
+          <img
+            src="pascal.jpg"
+            alt="Pascal Jufer"
+            width="360"
+            height="360"
+            style="width: 100%; height: auto; border-radius: 50%"
+          />
+        </picture>
+      </main>
+      <footer
+        style="
+          display: grid;
+          justify-content: center;
+          grid-auto-flow: column;
+          column-gap: 1.5em;
+        "
+      >
+        <a href="https://www.linkedin.com/in/pascal-j" target="_blank"
+          >LinkedIn</a
+        >
+        <span>&#183;</span>
+        <a href="https://www.xing.com/profile/Pascal_Jufer5" target="_blank"
+          >XING</a
+        >
+        <span>&#183;</span>
+        <a href="https://github.com/paescuj" target="_blank">GitHub</a>
+      </footer>
+    </div>
+  </body>
+</html>
