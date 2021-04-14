@@ -4,7 +4,7 @@
   "description": "Website paescuj.ch",
   "scripts": {
     "start": "parcel serve index.html",
-    "build": "rm -rf dist/ && parcel build index.html --dist-dir dist --no-source-maps && cp favicon.ico dist/"
+    "build": "rm -rf dist/ && parcel build index.html --dist-dir dist --no-source-maps"
   },
   "author": "Pascal Jufer",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "modern-normalize": "^1.0.0"
   },
   "devDependencies": {
-    "parcel": "^2.0.0-beta.2"
+    "parcel": "^2.0.0-beta.2",
+    "parcel-reporter-static-files-copy": "^1.2.2"
   }
 }
