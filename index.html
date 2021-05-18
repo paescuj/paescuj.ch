@@ -10,21 +10,21 @@
       font-family: Playfair Display, serif;
     }
     h1 {
-      font-size: 62px;
+      font-size: 4rem;
     }
     h1,
     h2 {
       margin: 0;
     }
     h2 {
-      font-size: 28px;
+      font-size: 1.8rem;
       font-weight: 400;
       font-style: italic;
       color: #585858;
     }
     h3 {
       font-family: Open Sans, sans-serif;
-      font-size: 20px;
+      font-size: 1.2rem;
       font-weight: 300;
     }
     @media (prefers-color-scheme: dark) {
@@ -42,18 +42,33 @@
         color: #b8678b;
       }
     }
+    .container {
+      width: 70%;
+      margin: auto;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 65% 35%;
+      column-gap: 2em;
+      margin-top: 8em;
+      margin-bottom: 2em;
+    }
+    #pascal {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    footer {
+      display: grid;
+      justify-content: center;
+      grid-auto-flow: column;
+      column-gap: 1.5em;
+      margin-bottom: 2em;
+    }
   </style>
   <body>
-    <div style="width: 70%; margin: auto">
-      <main
-        style="
-          display: grid;
-          grid-template-columns: 65% 35%;
-          column-gap: 2em;
-          margin-top: 180px;
-          margin-bottom: 40px;
-        "
-      >
+    <div class="container">
+      <main>
         <div>
           <h1>Pascal Jufer</h1>
           <h2>System Engineer & Student</h2>
@@ -78,24 +93,16 @@
         </div>
         <picture>
           <source type="image/webp" srcset="pascal.webp" />
-          <source type="image/jpeg" srcset="pascal.jpg" />
-          <img
+          <source type="image/jpeg" srcset="pascal.jpg" /> <img
+            id="pascal"
             src="pascal.jpg"
             alt="Pascal Jufer"
             width="360"
             height="360"
-            style="width: 100%; height: auto; border-radius: 50%"
           />
         </picture>
       </main>
-      <footer
-        style="
-          display: grid;
-          justify-content: center;
-          grid-auto-flow: column;
-          column-gap: 1.5em;
-        "
-      >
+      <footer>
         <a href="https://www.linkedin.com/in/pascal-j" target="_blank"
           >LinkedIn</a
         >
