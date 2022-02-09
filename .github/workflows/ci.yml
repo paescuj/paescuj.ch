@@ -1,0 +1,33 @@
+# Continuous Integration
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pre_check:
+    name: Pre-Check
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - name: Check for skippable jobs
+        id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        continue-on-error: true
+        with:
+          cancel_others: 'true'
+          paths_ignore: '["**/README.md"]'
+
+  test_build:
+    name: Test Build
+    needs: pre_check
+    uses: paescuj/paescuj.ch/.github/workflows/test-build.yml@main
+    with:
+      should_skip: ${{ needs.pre_check.outputs.should_skip }}
