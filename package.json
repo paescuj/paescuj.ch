@@ -8,7 +8,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@fontsource/open-sans": "4.5.8",
+    "@fontsource/open-sans": "4.5.10",
     "@fontsource/playfair-display": "4.5.9",
     "modern-normalize": "1.1.0",
     "vite": "2.9.8",
