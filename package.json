@@ -11,7 +11,7 @@
     "@fontsource/open-sans": "4.5.12",
     "@fontsource/playfair-display": "4.5.12",
     "modern-normalize": "1.1.0",
-    "vite": "3.1.6",
+    "vite": "3.1.8",
     "vite-plugin-html": "3.2.0",
     "vite-plugin-singlefile": "0.12.2"
   }
